@@ -2,4 +2,12 @@
     <string name="app_name">Recursos</string>
     <string name="Terminos_y_condiciones">Acepta terminos y condiciones</string>
     <string name="estado">Estado</string>
+    <string name="guardar">Guardar</string>
+    <string name="introduce_tu_nombre">Introduce tu Nombre</string>
+    <string name="texto_de_prueva">Texto de prueva</string>
+    <string name="button">Button</string>
+    <string name="button3">Button3</string>
+    <string name="button2">Button2</string>
+    <string name="button1">Button1</string>
+    <string name="button">Button</string>
 </resources>

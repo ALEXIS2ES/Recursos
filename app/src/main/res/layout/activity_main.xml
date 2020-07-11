@@ -17,16 +17,18 @@
             android:text="Hello World!"
             android:layout_centerHorizontal="true"
             android:drawableTop="@drawable/ic_bike"
-            android:drawableLeft="@drawable/ic_bike"/>
+            android:drawableLeft="@drawable/ic_bike"
+            tools:ignore="RtlHardcoded" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="@string/button"
             android:layout_alignRight="@+id/tvsaludo"
             android:layout_below="@+id/tvsaludo"
-            android:drawableBottom="@drawable/ic_bike"/>
+            android:drawableBottom="@drawable/ic_bike"
+            tools:ignore="RtlHardcoded" />
 
         <LinearLayout
             android:id="@+id/llMain"
@@ -42,16 +44,16 @@
                 android:text="Hello World!" />
 
             <Button
-                android:text="Button1"
+                android:text="@string/button1"
                 style="@style/myButton"/>
             <!--alt + shift + flecha pa arriba mueven una linea de posicion-->
 
             <Button
-                android:text="Button2"
+                android:text="@string/button2"
                 style="@style/myButton"/>
 
             <Button
-                android:text="Button3"
+                android:text="@string/button3"
                 style="@style/myButton"/>
 
         </LinearLayout>
@@ -68,12 +70,13 @@
                 android:layout_height="wrap_content"
                 android:text="Hello World!"
                 android:textColor="#fff"
-                android:layout_gravity="bottom|right"/>
+                android:layout_gravity="bottom|right"
+                tools:ignore="RtlHardcoded" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button"
+                android:text="@string/button"
                 android:layout_gravity="center_horizontal"/>
 
         </FrameLayout>
@@ -88,7 +91,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Texto de prueva"
+                android:text="@string/texto_de_prueva"
                 android:textColor="@android:color/holo_blue_light"
                 android:textAllCaps="true"
                 android:gravity="center_horizontal"
@@ -97,12 +100,13 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Introduce tu Nombre"/>
+                android:hint="@string/introduce_tu_nombre"
+                tools:ignore="Autofill,TextFields" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Guardar"
+                android:text="@string/guardar"
                 android:textAllCaps="false"/>
 
             <ImageButton
@@ -110,7 +114,8 @@
                 android:layout_height="wrap_content"
                 android:src="@drawable/ic_bike"
                 android:tint="#000"
-                android:background="?attr/selectableItemBackgroundBorderless"/>
+                android:background="?attr/selectableItemBackgroundBorderless"
+                tools:ignore="ContentDescription" />
 
             <Switch
                 android:layout_width="wrap_content"
@@ -134,11 +139,11 @@
             <ImageView
                 android:layout_width="@dimen/img.ancho"
                 android:layout_height="@dimen/img.largo"
-                android:src="@drawable/android"/> <!--simepre utilizar desnidad y no px por la
+                android:src="@drawable/android"
+                tools:ignore="ContentDescription" /> <!--simepre utilizar desnidad y no px por la
                 varidad de resoluciones-->
             <!--presionar esc para salir de la sugerencia erronea luego ctrl + barra espacio para
              autocompletar y forzar a android studio a que pueda reconocer-->
-
 
         </LinearLayout>
 
@@ -146,5 +151,37 @@
 </ScrollView>
 
 <!--
-mayus + F10 = crear de nuevo la aplicacion
-Ctrl + F10 = actualizar aplicacion-->
+shift + F10: Ejecutar la aplicación.
+
+shift + F9: Depurar la aplicación.
+
+ctrl + shift + N: búsqueda de cualquier archivo, clase, interfaz, drawable, layout, recurso.
+
+ctrl + tab: Navegar al último archivo abierto, mantén presionado control y presiona varias veces tab para desplazarte hacia abajo.
+
+crtl + tab + shift Navegar al primer archivo abierto, mantén presionado ctrl + mayúsculas y presiona varias veces tab para desplazarte hacia arriba.
+
+alt + F7: busca en que parte del proyecto es utilizado tu clase, método, recurso, etc...
+
+shift + F6: renombre el identificador y sus respectivos lugares donde fue utilizado.
+
+ctrl + shift + R: Remplazar una fracción de código por otra en el proyecto.
+
+alt + intro(insert): te muestra las opciones de corrección cuando existe un error en el compilador.
+
+ctrl + barra espaciadora: Muestra sugerencias de completación básica.
+
+crtl + shift + /: comenta un bloque de código.
+
+ctrl + D: duplica el código seleccionado.
+
+ctrl + alt + T: Introduce el código seleccionado a un if, for, while, try catch, etc...
+
+alt + shift + arriba/abajo: mover linea hacia arriba/abajo(también funciona con múltiples lineas si las seleccionamos).
+
+ctrl + b: ir a la declaración del recurso, variable, clase.
+
+ctrl + shift + F12: Oculta/Muestra ventanas de herramientas,(Útil para los xml en modo Text).
+
+ctrl + P: muestra los parámetros del método seleccionado.-->
+
