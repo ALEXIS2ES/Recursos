@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="img.ancho" tools:ignore="MissingDefaultResource">200dp</dimen>
+    <dimen name="img.largo" tools:ignore="MissingDefaultResource">200dp</dimen>
+</resources>

@@ -8,7 +8,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#f00">
+        android:background="@color/rojo_claro">
 
         <TextView
             android:id="@+id/tvsaludo"
@@ -32,7 +32,7 @@
             android:id="@+id/llMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#0f0"
+            android:background="@color/verde_claro"
             android:layout_below="@+id/button"
             android:orientation="horizontal">
 
@@ -45,17 +45,20 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button"/>
+                android:text="Button"
+                android:background="@color/background_button"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button"/>
+                android:text="Button"
+                android:background="@color/background_button"/>
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Button"/>
+                android:text="Button"
+                android:background="@color/background_button"/>
 
         </LinearLayout>
 
@@ -135,9 +138,12 @@
                 android:layout_height="wrap_content"/>
 
             <ImageView
-                android:layout_width="200dp"
-                android:layout_height="200dp"
-                android:src="@drawable/android"/> <!--simepre utilizar desnidad y no px por la varidad de resoluciones-->
+                android:layout_width="@dimen/img.ancho"
+                android:layout_height="@dimen/img.largo"
+                android:src="@drawable/android"/> <!--simepre utilizar desnidad y no px por la
+                varidad de resoluciones-->
+            <!--presionar esc para salir de la sugerencia erronea luego ctrl + barra espacio para
+             autocompletar y forzar a android studio a que pueda reconocer-->
 
 
 
