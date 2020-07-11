@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Recursos</string>
+    <string name="Terminos_y_condiciones">Acepta terminos y condiciones</string>
+    <string name="estado">Estado</string>
 </resources>

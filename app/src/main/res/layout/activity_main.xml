@@ -34,31 +34,25 @@
             android:layout_height="wrap_content"
             android:background="@color/verde_claro"
             android:layout_below="@+id/button"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hello World!"
-                />
+                android:text="Hello World!" />
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button"
-                android:background="@color/background_button"/>
+                android:text="Button1"
+                style="@style/myButton"/>
+            <!--alt + shift + flecha pa arriba mueven una linea de posicion-->
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button"
-                android:background="@color/background_button"/>
+                android:text="Button2"
+                style="@style/myButton"/>
 
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Button"
-                android:background="@color/background_button"/>
+                android:text="Button3"
+                style="@style/myButton"/>
 
         </LinearLayout>
 
@@ -121,11 +115,11 @@
             <Switch
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Estado"/>
+                android:text="@string/estado"/>
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Acepta terminos y condiciones"/>
+                android:text="@string/Terminos_y_condiciones"/>
 
             <ProgressBar
                 android:layout_width="match_parent"
@@ -144,7 +138,6 @@
                 varidad de resoluciones-->
             <!--presionar esc para salir de la sugerencia erronea luego ctrl + barra espacio para
              autocompletar y forzar a android studio a que pueda reconocer-->
-
 
 
         </LinearLayout>
